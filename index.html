@@ -1,0 +1,51 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+   
+</head>
+<body>
+<div class="container">
+    <div class="leftSide">
+<div class="bill">
+    <h3>Bill</h3>
+    <input type="number" class="forBill" id="billInput" placeholder="0" min="0"/>
+</div>
+<div class="percent">
+    <h3>Tip %</h3>
+    <input type="number" class="forTip" id="tipInput" placeholder="0%" min="0"/>
+  </div>
+
+  <div class="numOfPpl">
+    <h3>Number Of People</h3>
+    <input type="number" class="forPpl" id="pplInput" placeholder="0" min="0"/>
+    <button type="submit" id="btn">Calculate</button>
+  </div>
+  
+    </div>
+    <div class="rightSide">
+        <h3>Tip Amount: </h3>
+        <p id="calculate"> - </p>
+        <h3>Total Amount: </h3>
+        <p id="total">-</p>
+        <h3>Amount Per Person:</h3>
+        <p id="perperson">-</p>
+
+
+    </div>
+
+
+</div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
